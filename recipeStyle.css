@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px auto;
+  width: 85%;
+  align-items: center;
+}
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Style The Dropdown Button */
+.dropIcon {
+  /*background-color: #4caf50;*/
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  margin: 10px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 18px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.recipe {
+  /*max-height: 85vh;*/
+}
+h1 {
+  text-align: center;
+}
+hr {
+  width: 25%;
+  margin: 10px auto 20px;
+}
+.recipeMedia {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+h2 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.photo {
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+.recipePic {
+  max-width: 100%;
+  max-height: inherit;
+}
+.ingredients {
+  width: 40%;
+  max-width: 300px;
+}
+.ingredients > li {
+  margin: 10px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  margin: 0 auto;
+}
+.social {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social img {
+  max-width: 40px;
+  margin: 0 4px;
+  padding: 0;
+}
+.social p {
+  margin: auto 10px auto 0;
+}
+.recipeInfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+.clock {
+  max-width: 40px;
+}
+.recipeInfo span {
+  margin: 0 15pxs 0 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.7em;
+}
+.rate {
+  width: 100px;
+}
+
+.directions {
+  margin: 25px auto;
+  width: 50%;
+  padding: 20px;
+}
+.directions > li {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+footer {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  border: 1px solid black;
+}
+footer p {
+  margin: 20px;
+}

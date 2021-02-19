@@ -11,6 +11,7 @@ header {
   padding: 10px;
   margin: 10px auto;
   width: 85%;
+  height: 10vh;
   align-items: center;
 }
 .logo {
@@ -72,7 +73,8 @@ header {
   background-color: #3e8e41;
 }
 .recipe {
-  /*max-height: 85vh;*/
+  /*height: 80vh;*/
+  margin: 10px 20%;
 }
 h1 {
   text-align: center;
@@ -81,60 +83,48 @@ hr {
   width: 25%;
   margin: 10px auto 20px;
 }
+
 .recipeMedia {
   display: flex;
-  margin: 20px;
   justify-content: space-around;
-  align-items: center;
+  
+}
+.photo {
+  max-width: 500px;
+  max-height: 100%;
+  object-fit: cover;
+}
+.recipePic {
+  max-width: 100%;
+  max-height: auto;
+}
+.social {
+  display: flex;
+}
+.social img {
+  max-width: 40px;
+  margin: 0 4px;
+}
+.social p {
+  margin: auto 10px auto 0;
+}
+
+
+
+.ingredients {
+  width: 40%; 
+  max-height: 100%;
 }
 h2 {
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-.photo {
-  max-width: 500px;
-  height: auto;
-  object-fit: cover;
-}
-.recipePic {
-  max-width: 100%;
-  max-height: inherit;
-}
-.ingredients {
-  width: 40%;
-  max-width: 300px;
-}
 .ingredients > li {
-  margin: 10px;
-  width: 100%;
+  max-width: 300px;
   margin: 10px auto;
 }
-
-.middle {
-  display: flex;
-  justify-content: space-around;
-  height: 35px;
-  margin: 0 auto;
-}
-.social {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social img {
-  max-width: 40px;
-  margin: 0 4px;
-  padding: 0;
-}
-.social p {
-  margin: auto 10px auto 0;
-}
 .recipeInfo {
-  width: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 5px;
 }
 .clock {
@@ -142,15 +132,13 @@ h2 {
 }
 .recipeInfo span {
   margin: 0 15pxs 0 5px;
-  display: flex;
-  flex-wrap: nowrap;
-  font-size: 1.7em;
 }
 .rate {
   width: 100px;
 }
 
 .directions {
+  display: block;
   margin: 25px auto;
   width: 50%;
   padding: 20px;

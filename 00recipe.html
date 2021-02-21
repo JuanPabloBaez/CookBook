@@ -123,10 +123,28 @@
           minutes. Garnish with more basil before serving.
         </li>
       </ol>
+      
       <div class="timer">
-        <a href=""><img src="icon-recipe/clock.svg" alt=""></a>
-        <p>Set Timer</p>
+        <img src="iconTimer.png" alt="">
+        <button id="myBtn">Set Timer</button>
       </div>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+      <input type="text" class="time" placeholder="1 (minute)" />
+      <input type="submit" class="set_timer" value="Set Timer" />
+      <div class="container">
+        <div class="clock">
+          <div class="line"></div>
+        </div>
+      </div>
+  </div>
+
+</div>
       
     </main>
 
@@ -134,4 +152,32 @@
       <p>some legal stuff</p>
     </footer>
   </body>
+
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+
+
+}
+</script>
 </html>

@@ -8,16 +8,14 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   margin: 10px auto;
-  width: 85%;
+  width: 80%;
   height: 10vh;
+  min-height: 50px;
   align-items: center;
 }
 .logo {
-  object-fit: contain;
-  height: 60px;
-  
+  max-height: 70px;  
 }
 
 /* Style The Dropdown Button */
@@ -41,7 +39,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 32px;
+  top: 75%;
   right: 0;
   margin: 10px;
   background-color: #f9f9f9;
@@ -73,29 +71,25 @@ header {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+
 .recipe {
   margin: 10px 10%;
-  border: 1px solid orange;
 }
 h1 {
   text-align: center;
 }
 hr {
-  width: 50%;
+  width: 40%;
   margin: 10px auto 20px;
 }
 
 .recipeMedia {
   display: flex;
   flex-direction: column;
-  border: 1px solid purple;
   align-items: center;
 }
 
-.photo {
-  border: 1px solid green;
-
-}
 .recipePic {
  width: 100%;
  height: 70vh;
@@ -104,13 +98,11 @@ hr {
 }
 .social {
   display: flex;
-  margin: 10px 0;;
- 
+  margin: 10px 0;
 }
 .social img {
   height: 30px;
-  margin: 0 5px;;
-  
+  margin: 0 5px;  
 }
 .social p {
   margin: auto 10px ;
@@ -119,16 +111,13 @@ hr {
 
 .foodList {
   width: 80%;
-   margin: 20px auto;
-   display: block;
+  margin: 20px auto;
 }
 h2 {
-  margin: 20px;
+  margin: 15px;
   text-transform: uppercase;
-  
 }
 .ingredients {
-  border: 1px solid red;
   margin: 0 auto;  
   list-style-position: inside;  
 }
@@ -141,10 +130,10 @@ h2 {
   align-items: center;
 }
 .clock {
-  max-width: 30px;
+  max-width: 40px;
 }
 .recipeInfo span {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
   font-size: 2em;
 }
 .rate {
@@ -169,7 +158,7 @@ h2 {
   width: 25%;
   margin: 0px auto;
   align-items: center;
-  margin-bottom: 40px;;
+  margin-bottom: 40px;
 }
 /*.timer>img {
  }*/
@@ -193,7 +182,6 @@ footer {
   display: flex;
   align-items: center;
   height: 10vh;
-  border: 1px solid black;
 }
 footer p {
   margin: 20px;
@@ -231,7 +219,5 @@ footer p {
    font-size: 1.3em;
    
   }
-
-
   
 }

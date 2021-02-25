@@ -94,7 +94,7 @@ hr {
  width: 100%;
  height: 70vh;
  object-fit: cover;
- object-position: 0 50%;
+ /*object-position: 0 50%;*/
  margin: 0 auto ;
 }
 .social {
@@ -117,6 +117,11 @@ hr {
 h2 {
   margin: 15px;
   text-transform: uppercase;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 15px;
 }
 .ingredients {
   margin: 0 auto;  
@@ -151,7 +156,7 @@ h2 {
   padding: 20px;
   line-height: 2;
 }
-.directions > li {
+.instruccions > li {
   margin: 15px 0;
   font-size: 1.2em;
  

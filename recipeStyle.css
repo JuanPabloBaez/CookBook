@@ -247,8 +247,14 @@ footer {
   width: 15%;
   display: flex;
   justify-content: space-around;
+  
 }
-
+.footerLink a {
+  text-decoration: none;
+  color: hsl(101, 61%, 50%);
+  font-weight: bolder;
+  font-size: 1.2em;
+}
 
 @media screen and (min-width: 800px) {
   .recipeMedia {

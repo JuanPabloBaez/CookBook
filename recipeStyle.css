@@ -49,11 +49,14 @@ header {
 }
 
 /* Links inside the dropdown */
-.dropdown-content button {
+.dropdown-content a {
   color: black;
   padding: 18px 25px;
   text-decoration: none;
   display: block;
+  border: 1px solid hsl(101, 67%, 71%);
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Change color of dropdown links on hover */
@@ -164,6 +167,7 @@ h3 {
 .timer {
   position: relative;
   width: 40%;
+  max-width: 400px;
   margin: 0px auto;
   align-items: center;
   justify-content: center;
@@ -234,11 +238,17 @@ input {
 footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 10vh;
+  border: 1px solid hsl(101, 67%, 71%);
+  padding: 3%;
 }
-footer p {
-  margin: 20px;
+.footerLink {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
 }
+
 
 @media screen and (min-width: 800px) {
   .recipeMedia {

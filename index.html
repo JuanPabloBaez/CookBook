@@ -84,7 +84,7 @@
     <button class="btn" onclick="filterSelection('main')"> Main</button>
     <button class="btn" onclick="filterSelection('salad')"> Salad</button>
     <button class="btn" onclick="filterSelection('breakfast')"> Breakfast</button>
-    <button class="btn" onclick="filterSelection('soup')">Soup</button>
+   <!-- <button class="btn" onclick="filterSelection('soup')">Soup</button> -->
   </div>
 
   <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
@@ -142,6 +142,7 @@
 
 
   <script>
+     
     var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -165,12 +166,11 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active1", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active1"; 
 }
-
 
           /* list **/
 
@@ -185,7 +185,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
-
 // Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -197,7 +196,6 @@ function w3AddClass(element, name) {
     }
   }
 }
-
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
@@ -220,7 +218,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
+} 
 
 
 

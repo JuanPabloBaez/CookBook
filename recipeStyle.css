@@ -255,7 +255,7 @@ footer {
   font-size: 1.2em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .recipeMedia {
     flex-direction: row;
     justify-content: space-between;

@@ -220,17 +220,17 @@ img {
 
 .container {
   overflow: hidden;
-  justify-content: space-between; 
+  justify-content: center;   
   
 }
 
 .filterDiv {
-  float: left;
+  float: none;
   position: relative;
-  max-width: 30%;
+  max-width: 80%;
   height: 35vh;
+  margin: 10px auto;
   text-align: center;
-  margin: 15px;
   overflow: hidden;
   border-radius: 5px;
 
@@ -252,8 +252,8 @@ img {
  background-color: hsla(101, 67%, 45%, .6);
  padding: 2%;
  border-radius: 10px;
- font-size: 1.1vw;
-
+ font-size: 1.1em;
+ width: 60%;
 
 }
 
@@ -304,11 +304,11 @@ img {
   width: 90%;
   margin: 0 auto;
 }
-.contactForm textarea {
+textarea {
   height: 20vh;
 }
-.contactForm input .button {
-  width: 40%;
+.button {
+  width: 60px;
   margin-top: 10px;
 }
 
@@ -335,41 +335,20 @@ footer {
   font-size: 1.2em;
 }
 
-/*
-@media screen and (min-width: 800px) {
-  .recipeMedia {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .photo {
-    width: 40%;
-    height: 100%;
-    margin: 0 auto;    
-  }
-  .recipePic {
-    margin: 0 auto;    
-  }
-  .foodList{
-    width: 40%;
-    height: 100%;
-  }
-  .h2 {
-    font-size: 1.5vw;
-  }
+@media screen and (min-width: 550px) {
   
-  .directions {
-    width: 60%;
+  .filterDiv{
+    width:45%;
+    float: left;
+    margin: 10px;
+    
   }
-  .timer {
-    max-width: 300px;
-    height: auto;
-     
+
+@media screen and (min-width: 900px) {
+  
+  .filterDiv{
+    width:30%;
+    float: left;
+    
   }
-  .timer button {
-   font-size: 1.3em;
-   max-width: 125px; 
-  }
-  input {
-    width: 40%
-  }
-}  */
+}  

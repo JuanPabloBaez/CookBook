@@ -26,8 +26,8 @@ header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: hsl(101, 62%, 36%);
 }
-.logo a:hover {
-  text-decoration: inherit;
+.logo>a:hover {
+  text-decoration: none;
 }
 
 .logo > img {
@@ -100,7 +100,8 @@ header {
   max-width: 1200px;
   height: 70vh;
   position: relative;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 40px;
   
   
 }

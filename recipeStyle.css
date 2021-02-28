@@ -242,17 +242,19 @@ footer {
   border: 1px solid hsl(101, 67%, 71%);
   padding: 3%;
 }
-.footerLink {
-  width: 15%;
-  display: flex;
-  justify-content: space-around;
+..footerLink {
+  width: 18%;
+  align-items: flex-end;
+  text-align: right;
   
 }
 .footerLink a {
   text-decoration: none;
   color: hsl(101, 61%, 50%);
   font-weight: bolder;
-  font-size: 1.2em;
+  font-size: 1.9vh;
+  margin-right: 10px;
+  
 }
 
 @media screen and (min-width: 900px) {

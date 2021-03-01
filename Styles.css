@@ -298,12 +298,14 @@ img {
 }
 textarea {
   height: 20vh;
-  min-height: 5vh;
+  min-height: 10vh;
 }
 .button {
   width: 20%;
- 
+  min-height: 10vh;
 }
+ 
+
 #enviar {
   margin: 30px auto;
   width: 20%;
